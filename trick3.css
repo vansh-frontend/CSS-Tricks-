@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 80vh;
+  background-color: blueviolet;
+}
+div{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h2::selection{
+  background-color: black;
+  color: aliceblue;
+}
+h2{
+  font-size: 30px;
+}
