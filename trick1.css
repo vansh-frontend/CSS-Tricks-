@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  margin: 0;
+  height: 70vh;
+  background-color: crimson;
+}
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div > b{
+  color:#ffff;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+/* main part for bouncing */
+div > h2{
+  color:springgreen;
+  font-size: 32px;
+  animation: bounce 3s infinite ease-in-out;  /*bounce effect*/
+}
+/* use @keyframe for animation*/
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  25% {
+    transform: translateY(-20px); /* First bounce */
+  }
+  50% {
+    transform: translateY(0); /* Back to start */
+  }
+  75% {
+    transform: translateY(-10px); /* Second bounce */
+  }
+}

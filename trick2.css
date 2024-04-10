@@ -1,0 +1,47 @@
+
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  margin: 0;
+  height: 70vh;
+  background-color: crimson;
+}
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div > b{
+  color:#ffff;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+/* main part for bouncing */
+div > h2{
+  color:springgreen;
+  font-size: 32px;
+  animation: heartbeat 3s infinite ease-in-out;  /*bounce effect*/
+}
+/* use @keyframe for animation*/
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger size */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
