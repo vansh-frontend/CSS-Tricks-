@@ -35,6 +35,7 @@ h1{
 .div img:hover {
   transform: scale(1.1); /* Scale the image on hover */
 }
+
 h2{
   color:#ffff;
   text-transform: uppercase
