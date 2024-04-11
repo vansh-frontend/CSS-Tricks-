@@ -1,0 +1,41 @@
+body{
+  background-color: crimson;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+}
+.div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 25vmax;
+  width: 50vmax;
+  background-color: #ffff;
+  border-radius: 8px;
+  box-shadow: 3px 5px rgba(0,0,0,0.1);
+
+}
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: blueviolet;
+}
+
+.div img {
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  transition: transform 0.3s ease; /* Add transition property for smooth effect */
+}
+
+.div img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+h2{
+  color:#ffff;
+  text-transform: uppercase
+}
