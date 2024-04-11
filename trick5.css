@@ -1,0 +1,38 @@
+body{
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  margin: 0;
+  align-items: center;
+  background-color: slateblue;
+}
+.div {
+  border: 1px solid #ffff;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  color: #ffff;
+  animation: change 5s infinite alternate; /* Adjust animation duration and use alternate direction */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+
+@keyframes change {
+  0% {
+    background-color: cadetblue;
+  }
+  25% {
+    background-color: brown;
+  }
+  50% {
+    background-color: crimson;
+  }
+  75% {
+    background-color: darkgreen;
+  }
+  100% {
+    background-color: violet;
+  }
+}
