@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+ body{
+  background-color: #2c2c2c;
+ }
+.nav ul{
+  background-color:slateblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+
+}
+.nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 20px 20px;
+  font-weight: 500;
+  transition: 0.2s linear;
+}
+.nav ul li{
+  list-style: none;
+}
+.nav ul li a:hover{
+  color:#333;
+  text-decoration: none;
+  font-size: 23px;
+  text-transform: capitalize;
+  margin: 20px 20px;
+  font-weight: 500;
+  text-decoration: underline currentColor;
+
+}
