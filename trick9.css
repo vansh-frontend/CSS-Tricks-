@@ -1,0 +1,89 @@
+/* Style the footer */
+footer {
+  background-color: #212529; /* Dark gray background */
+  color: #fff; /* White text color */
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Extend footer to the left side */
+  width: 100%; /* Maintain full width */
+  transition: background-color 0.3s ease; 
+  cursor: pointer;/* Smooth background color transition */
+}
+
+/* Other footer styles remain the same... */
+
+/* Style the footer columns */
+.footer-column {
+  flex: 1;
+  padding: 0 10px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth column animation */
+}
+
+/* Style the footer headings */
+footer h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold; /* Add some weight to headings */
+}
+
+/* Style the footer links */
+footer ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+/* Style the subscribe form */
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+footer button[type="submit"] {
+  background-color: #007bff;
+  color: #fff; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+footer:hover {
+  background-color: #1a1b1c; 
+}
+
+footer a:hover,
+footer button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+
+/* responsiveness  */
+@media (max-width: 768px) {
+  .footer-column {
+    transform: translateY(20px); 
+  }
+  footer:hover .footer-column {
+    transform: translateY(0); 
+  }
+}
+
+@media (max-width: 480px) {
+
+  .footer-column {
+    flex: 100%; 
+  }
+}
