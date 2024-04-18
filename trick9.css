@@ -71,7 +71,7 @@ footer button[type="submit"]:hover {
 }
 
 
-/* responsiveness  */
+/* responsiveness    */
 @media (max-width: 768px) {
   .footer-column {
     transform: translateY(20px); 

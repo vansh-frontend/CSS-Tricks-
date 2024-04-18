@@ -1,0 +1,85 @@
+
+body{
+    /* background-color: #444; */
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+background: linear-gradient(to right, #25c481, #25b7c4);
+font-family: 'Roboto', sans-serif;
+
+}
+h1{
+    color: steelblue;
+
+}
+label{
+    color: #333;
+    font-size: 18px ;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.inputs{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+
+input{
+    width: 100%;
+    max-width: 25%;
+    height: 50px;    
+  color: #ffff;
+    margin: 20px 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color:rgba(0,0,0,0.7);
+backdrop-filter: blur(10px);
+box-shadow: -10px 0 10px rgba(0,0,0,0.3);
+margin: 20px 20px;
+font-size: 15px;
+
+
+}
+input:hover{
+    width: 100%;
+    max-width: 25%;
+    height: 50px;    
+  color: #ffff;
+    margin: 20px 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color:rgba(0,0,0,0.1);
+backdrop-filter: blur(10px);
+box-shadow: -10px 0 10px rgba(0,0,0,0.3);
+margin: 20px 20px;
+font-size: 15px;
+}
+.input:invalid {
+    animation: shake 0.3s forwards;
+    color: red;
+
+}
+@keyframes shake {
+    0% {
+        transform: translateX(5px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+        background-color: red;
+        color:#fff;
+    }
+}
